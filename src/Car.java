@@ -8,6 +8,8 @@ public class Car {
     public Car(String mk, String md){
         this.make = mk;
         this.model = md;
+        amount++;
+        System.out.println("item " + mk + " " + md +" is created");
     }
 
     public String getMake() {
