@@ -4,6 +4,10 @@ public class Car {
     private String model;
 
     static int amount = 0;
+    static boolean ifItPossibleToCreate(String mk, String md){
+
+        return md.length()<10;
+    }
 
     public Car(String mk, String md){
         this.make = mk;

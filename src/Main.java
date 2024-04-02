@@ -10,10 +10,13 @@ public class Main {
 //
 //        Car.amount = 1;
         System.out.println(Car.amount);
-        Car c1 = new Car("Honda", "Accord");
-        Car c2 = new Car("Opel", "Corsa");
-        Car c3 = new Car("Ford", "Bronco");
-        addMoreCars();
+        String mk =  "Opel", md = "CorsaCorsaCorsa";
+        if (Car.ifItPossibleToCreate(mk, md)){
+            Car c2 = new Car(mk, md);
+        } else {
+            System.out.println("When model length name more than 10 chars - is not possible to create record");
+        }
+
         System.out.println(Car.amount);
     }
 
